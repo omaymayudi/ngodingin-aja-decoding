@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Style Navbar */
+.container {
+    width: 85%;
+    margin-inline: auto;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url('../image/backgroud.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.nav {
+    width: 100%;
+    padding: 20px 0 10px 0;
+}
+
+.nav .box-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .box-nav .box:nth-child(1) h1 {
+    font-size: 35px;
+    color: white;
+}
+
+.nav .box-nav .box:nth-child(2) ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav .box-nav .box:nth-child(2) ul li {
+    list-style-type: none;
+    margin-left: 35px;
+}
+
+.nav .box-nav .box:nth-child(2) ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.nav .box-nav .box:nth-child(2) ul li a:hover{
+    color: yellowgreen;
+}
+
+.nav .box-nav .box:nth-child(3)  {
+    color: white;
+    font-size: 19px;
+    display: none;
+}
+
+.nav .box-nav .box:nth-child(2) ul li i {
+    display: none;
+}
+
+/* Style About */
+.about {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.about .box-about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .box-about .box:nth-child(1) img {
+    width: 550px;
+    height: 333px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;  
+}
+
+.about .box-about .box:nth-child(2) {
+    margin-left: 25px;
+}
+
+.about .box-about .box:nth-child(2) p {
+    margin-top: 15px;
+    line-height: 1.5;
+}
+.about .box-about .box:nth-child(2) h1 {
+    font-size: 45px;
+}
+/* Style About */
+
+/* Ukuran Screen 1200px */
+@media screen and (max-width: 1200px) {
+    .about .box-about .box:nth-child(1) img {
+        width: 400px;
+        height: 250px;
+    }
+}
+/* Ukuran Screen 1200px */
+
+/* Ukuran Screen max 990px */
+@media screen and (max-width: 990px) {
+    .nav .box-nav .box:nth-child(2) {
+        display: flex;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        background-color: white;
+        width: 250px;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -o-border-radius: 10px;
+        opacity: 0;
+        transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+    }
+
+    .nav .box-nav .menu-nav.menu-active {
+        opacity: 1;
+        top: 100px;
+    }
+
+    .nav .box-nav .box:nth-child(2) ul {
+        flex-direction: column;
+    }
+
+    .nav .box-nav .box:nth-child(2) ul li a {
+        color: black;
+    }
+
+    .nav .box-nav .box:nth-child(2) ul li {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .nav .box-nav .box:nth-child(2) ul li i {
+        margin-inline: 10px;
+        font-size: 20px;
+        display: inline-block;
+    }
+
+    .nav .box-nav .box:nth-child(3) {
+        display: inline-block;
+    }
+
+    .nav .box-nav .box:nth-child(3) i {
+       font-size: 30px;
+    }
+
+    .about .box-about {
+        flex-direction: column-reverse;
+    }
+
+    .about .box-about .box:nth-child(2) {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-left: 0;
+    }
+    .about .box-about .box:nth-child(1) img {
+        width: 320px;
+    }
+ }
+/* Style Navbar */
+
+/* Style TagLine */
+header .tagline {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    -moz-transform: translate(50%, -50%);
+    -webkit-transform: translate(50%, -50%);
+    -ms-transform: translate(50%, -50%);
+    -o-transform: translate(50%, -50%);
+    
+}
+
+header .tagline h1 {
+color: rgba(255, 255, 255, 0.564);
+font-size: 40px;
+
+}
+
+header .tagline .box  {
+    margin-top: 20px;
+    display: grid;
+    place-items: center;
+     
+     
+}
+
+header .tagline .box button  {
+    background-color: #00ccff;
+    display: inline-block;
+    color: black;
+    border: 2px solid rgb(244, 244, 253); 
+    transition-duration: 0.4s;
+    display: inline-block;
+    font-size: 20px;
+    width: 230px;
+    height: 40px;
+    color: white;
+    border-radius: 8px;
+ 
+}
+
+header .tagline .box button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: yellowgreen;
+    
+}
+/* Style TagLine */
+
+/* Ukuran screen 770px */
+@media screen and (max-width:770px) {
+    header .tagline h1 {
+        font-size: 25px;
+    }
+
+    header .tagline .box button {
+        font-size: 15px;
+        width: 180px;
+        height: 30px;
+    }
+
+    .about .box-about .box:nth-child(2) h1 {
+      font-size: 30px;
+    }
+}
+
+/* Ukuran screen 470px */
+@media screen and (max-width:470px) {
+    header .tagline h1 {
+        font-size: 19px;
+    }
+
+    header .tagline .box button {
+        font-size: 10px;
+        width: 150px;
+        height: 25px;
+    }
+    .about .box-about .box:nth-child(2) h1 {
+        font-size: 25px;
+      }
+
+      .about .box-about .box:nth-child(2) p {
+        font-size: 14px;
+      }
+      .about .box-about .box:nth-child(1) img {
+        width: 260px;
+    }
+}
+
+@media screen and (max-width:370px) {
+   .nav .box-nav .box:nth-child(2) {
+    right: 30px;
+   }
+   .nav .box-nav .menu-nav.menu-active {
+    right: 30px;
+   }
+}
