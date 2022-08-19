@@ -79,6 +79,7 @@ header {
     height: 100vh;
     display: flex;
     align-items: center;
+    background-color: #f8f9fa;
 }
 
 .about .box-about {
@@ -86,6 +87,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    
 }
 
 .about .box-about .box:nth-child(1) img {
@@ -111,11 +113,111 @@ header {
 }
 /* Style About */
 
+/* Style Learning Pacth */
+.lear {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #495057;
+}
+.lear .box-lear {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lear .box-lear .box {
+    text-align: center;
+    margin-inline: 20px;
+}
+
+
+
+.lear .box-lear .box img {
+    width: 100%;  
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.lear .box-lear .box h1 {
+    margin-top: 8px;
+    margin-bottom: 5px;
+    color: white;
+}
+.lear .box-lear .box p {
+    color: white;
+}
+/* Style Learning Pacth */
+
+/* Style Contact */
+.contact {
+    width: 100%;
+    height: 100vh;
+   display: flex;
+   justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+}
+
+.contact .box-contact {
+    margin-top: 10px;
+    display: grid;
+    place-items: center;
+}
+
+.contact .box-contact .box img {
+    width: 250px;
+    border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -o-border-radius: 10px;
+        margin-bottom: 10px;
+}
+.contact .box-contact .box {
+    margin-top: 10px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 20px;
+}
+
+.contact .box-contact .box h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.contact .box-contact .box i {
+    font-size: 25px;
+}
+.contact .box-contact .box i strong{
+    font-size: 20px;
+}
+/* Style Contact */
+
+/* Style Footer */
+footer {
+    text-align: center;
+    background-color: #495057;
+    padding: 10px 0 10px 0;
+    color: white;
+}
+/* Style Footer */
+
 /* Ukuran Screen 1200px */
 @media screen and (max-width: 1200px) {
     .about .box-about .box:nth-child(1) img {
         width: 400px;
         height: 250px;
+    }
+
+    .contact .box-contact .box img {
+        width: 200px;
     }
 }
 /* Ukuran Screen 1200px */
@@ -190,6 +292,24 @@ header {
     .about .box-about .box:nth-child(1) img {
         width: 320px;
     }
+
+    .lear {
+        height: 100%;
+        padding-top: 50px;
+    }
+
+    .lear .box-lear {
+        flex-direction: column;
+    }
+
+    .lear .box-lear .box img {
+        width: 300px;
+    }
+
+    .lear .box-lear .box p {
+        margin-bottom: 15px;
+    }
+    
  }
 /* Style Navbar */
 
@@ -280,6 +400,16 @@ header .tagline .box button:hover {
       .about .box-about .box:nth-child(1) img {
         width: 260px;
     }
+
+    .lear .box-lear .box img {
+        width: 260px;
+    }
+    .lear .box-lear .box h1 {
+        font-size: 22px;
+    }
+    .lear .box-lear .box p {
+        font-size: 13px;
+    }
 }
 
 @media screen and (max-width:370px) {
@@ -290,3 +420,5 @@ header .tagline .box button:hover {
     right: 30px;
    }
 }
+
+

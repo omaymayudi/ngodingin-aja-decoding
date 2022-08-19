@@ -16,12 +16,21 @@
     <!-- link remixicon CDN icon font -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
+    <!-- Link Animate CDN -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <!-- Link Animate On Scroll CDN -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Ngodingin aja!</title>
 </head>
-<body>
+<body id="home">
     <!-- Navigation -->
     <header>
-        <section class="nav">
+        <section class="nav animate__animated animate__bounceInDown" id="nav">
             <div class="container">
                 <div class="box-nav">
                     <div class="box">
@@ -32,19 +41,19 @@
                             
                             <li>
                                 <i class="ri-home-4-line"></i>
-                                <a href="#">Home</a>
+                                <a href="#home">Home</a>
                             </li>
                             <li>
                                 <i class="ri-file-info-line"></i>
-                                <a href="#">About</a>
+                                <a href="#about">About</a>
                             </li>
                             <li>
                                 <i class="ri-ball-pen-line"></i>
-                                <a href="#">Learning Patch</a>  
+                                <a href="#learn">Learning Patch</a>  
                             </li>
                             <li>
                                 <i class="ri-contacts-line"></i>
-                                <a href="#">Contact</a>
+                                <a href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -58,24 +67,23 @@
         
         <!-- Tag Line -->
         <section class="tagline">
-            <h1>E-Learingnya Para Deplover</h1>
+            <h1 class="animate__animated animate__pulse">E-Learingnya Para Deplover</h1>
             <div class="box">
-                <button>Lets E-Learingnya</button>
+                <button class="animate__animated animate__pulse">Lets Learing</button>
             </div>
-            
         </section>
         <!-- Tag Line -->
 
     </header>
    
     <!-- About -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="box-about">
-                <div class="box">
-                    <img src="/image/About.jpg" alt="">
+                <div class="box" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="./image/About.png" alt="">
                 </div>
-                <div class="box">
+                <div class="box" data-aos="fade-left" data-aos-duration="1000">
                     <h1>Kodingin Aja!</h1>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, quos hic! Rem accusamus dignissimos excepturi corporis molestiae repudiandae impedit placeat, deserunt natus quas, blanditiis ab nulla rerum, neque doloribus dolorem!</p>
                 </div>
@@ -84,7 +92,76 @@
     </section>
     <!-- About -->
 
+    <!-- Learing Pacth -->
+    <section class="lear" id="learn">
+        <div class="container">
+            <div class="box-lear">
+                <div class="box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
+                    <img src="./image/forntend2.png" alt="">
+                    <h1>Front-End Developer</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laborum non repellat labore itaque, tempora, ipsam recusandae iste, nobis officia quibusdam? Aliquid eum omnis suscipit doloremque enim nesciunt ab cumque.</p>
+                </div>
+                <div class="box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                    <img src="./image/backend2.png" alt="">
+                    <h1>Back-End Developer</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laborum non repellat labore itaque, tempora, ipsam recusandae iste, nobis officia quibusdam? Aliquid eum omnis suscipit doloremque enim nesciunt ab cumque.</p>
+                </div>
+                <div class="box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+                    <img src="./image/rect2.png" alt="">
+                    <h1>React Developer</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laborum non repellat labore itaque, tempora, ipsam recusandae iste, nobis officia quibusdam? Aliquid eum omnis suscipit doloremque enim nesciunt ab cumque.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Learing Pacth -->
+
+    <!-- Contact -->
+    <aside>
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="box-contact">
+                    <div class="box" data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">
+                        <h1 >Founder</h1>
+                        <img src="./image/profile.png" > 
+                        <h2>Mayudi</h2> 
+                        <i class="ri-mail-send-line" >
+                            <strong> mayudiohok@gmail.com</strong>
+                        </i>
+                        <i class="ri-instagram-line">
+                            <strong>omaymayud</strong>
+                        </i>
+                        <i class="ri-twitter-line">
+                           <strong> omaymayud05</strong>
+                        </i>
+                        <i class="ri-facebook-box-line">
+                            <strong>Mayudi</strong>
+                        </i>
+                        <i class="ri-github-fill">
+                            <strong>omaymayudi</strong>
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </aside>
+    <!-- Contact -->
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2022 By Mayudi</p>
+    </footer>
+    <!-- Footer -->
+
     <!-- Link JavaScript -->
     <script src="./assets/script.js"></script>
+
+    <!-- Link Animate On Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
